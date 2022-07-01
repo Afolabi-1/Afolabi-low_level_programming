@@ -5,7 +5,7 @@
 /**
  * main - returns a random value for n with conditions
  *
- * return: always 0(successful)
+ * Return: always 0(successful)
  */
 
 int main(void)
@@ -14,7 +14,6 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-
 	if (n > 0) 
 	{ printf("%d is positive\n", n); }
 	else if (n == 0)
