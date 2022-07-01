@@ -1,6 +1,8 @@
 #include <stdio.h>
 
-/* This should return a 0*/
+/**
+ *  This should return a 0
+ */
 
 int main(void)
 {
