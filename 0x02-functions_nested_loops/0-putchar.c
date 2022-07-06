@@ -1,23 +1,21 @@
 #include "main.h"
 
 /**
- * main - Entry Point
- *
- * Return: always 0 (success)
- */
+ * *main - this program prints _putchar
+ * *Return: (0) if successful
+ * */
 
 int main(void)
 {
-	char var1[] = "_putchar";
-	int i;
+		char var[] = "_putchar";
+			int ii;
+				/*length of the array var*/
+				int lenVar = sizeof(var) / sizeof(var[0]);
 
-	/* Gets the length of the array */
-	int varlen = sizeof(var1) / sizeof(var1[0]);
-
-	for (i = 0; i < varlen - 1; i++)
-	{
-		_putchar(var1[i]);
-	}
-	_putchar("\n");
-	return (0);
+					for (ii = 0; ii < lenVar - 1; ii++)
+							{
+										_putchar(var[ii]);
+											}
+						_putchar('\n');
+							return (0);
 }
