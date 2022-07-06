@@ -43,8 +43,8 @@ void print_to_98(int var)
 			}
 		}
 	}
+	_putchar('\n');
 }
-_putchar('\n');
 
 /**
  * print - prints
