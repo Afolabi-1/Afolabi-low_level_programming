@@ -17,7 +17,7 @@ void times_table(void)
 			nums = i * j;
 			if (j == 0)
 				_putchar('0' + nums);
-			else if (mul < 10)
+			else if (nums < 10)
 			{
 				_putchar(' ');
 				_putchar('0' + nums);
