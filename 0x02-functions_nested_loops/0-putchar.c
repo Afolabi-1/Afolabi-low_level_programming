@@ -12,11 +12,11 @@ int main(void)
 	int i;
 
 	/* Gets the length of the array */
-	int Varlen = sizeof(var1) / sizeof(var[0]);
+	int varlen = sizeof(var1) / sizeof(var1[0]);
 
 	for (i = 0; i < varlen - 1; i++)
 	{
-		_putchar(var[i]);
+		_putchar(var1[i]);
 	}
 	_putchar("\n");
 	return (0);
