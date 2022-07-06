@@ -6,7 +6,7 @@
  * Return: 1 success 0r 0
  */
 
-int _isalpha(int c);
+int _isalpha(int c)
 {
 	int upper = (c >= 'A' && c <= 'Z');
 	int lower = (c >= 'a' && c <= 'z');
