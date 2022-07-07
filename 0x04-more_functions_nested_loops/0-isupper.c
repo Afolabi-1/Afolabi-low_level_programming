@@ -8,9 +8,7 @@
 
 int _isupper(int c)
 {
-	int upper = c >= 'A' && c <= 'Z';
-
-	if (c = upper)
+	if (c >= 'A' && c <= 'Z')
 	{
 		return (1);
 	}
