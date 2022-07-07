@@ -19,7 +19,7 @@ int main(void)
 		n2 = result;
 		printf("%lu", result);
 		if (ii != nlast - 1)
-			printf(",");
+			printf(", ");
 	}
 	printf("\n");
 	return (0);
