@@ -23,7 +23,7 @@ int main(void)
 			hold3 = var1 + var2 + hold1;
 			var1 = var2, var2 = hold3;
 			bk1 = bk2, bk2 = hold2;
-			printf("%lu%010lu", var2, b2);
+			printf("%lu%010lu", var2, bk2);
 		}
 		else
 		{

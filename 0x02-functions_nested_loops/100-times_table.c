@@ -25,7 +25,7 @@ void print_times_table(int n)
 		return;
 	for (ii = 0; ii <= n; ii++)
 	{
-		for (j = 0; jj <= n; jj++)
+		for (jj = 0; jj <= n; jj++)
 		{
 			mul = ii * jj;
 			if (jj == 0)
