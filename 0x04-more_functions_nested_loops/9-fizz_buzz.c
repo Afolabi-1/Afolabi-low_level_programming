@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - main function
@@ -7,9 +8,6 @@
  * print fizz if its a multiple of 3
  * buzz if its a multiple of 5
  * and fizz buzz if its both a multiple of 3 and 5
- *
- * Created by: Jonah Jockthan
- * cc: 7th july, 2022
  *
  * Return: 0 if successful
  */
