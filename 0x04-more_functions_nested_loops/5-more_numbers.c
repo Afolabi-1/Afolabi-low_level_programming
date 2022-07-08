@@ -11,16 +11,16 @@ void more_numbers(void)
 	int c = 0, b;
 
 	/* first loop */
-	while (c < 11)
+	while (c < 10)
 	{
 		/* second loop */
 		for (b = 0 ; b < 15 ; b++)
 		{
 			if (b >= 10)
 			{
-				_putchar(b/10 + '0');
+				_putchar(b / 10 + '0');
 			}
-			_putchar(b%10 + '0');
+			_putchar(b % 10 + '0');
 		}
 		_putchar('\n');
 		c++;
