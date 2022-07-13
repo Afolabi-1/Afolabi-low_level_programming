@@ -7,10 +7,12 @@
  */
 void print_rev(char *s)
 {
-	while (*s <= '0')
+	int len = _strlen(s[0]);
+	int i, j;
+	for (i = 0, j = len - 1; i < len; i++, j--)
 	{
-		_putchar(*s);
-		s--;
+		s[1][i] = str[0][j];
 	}
+	_putchar(s[1];
 	_putchar('\n');
 }
