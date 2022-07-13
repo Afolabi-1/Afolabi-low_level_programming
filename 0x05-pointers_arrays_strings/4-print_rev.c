@@ -3,19 +3,25 @@
 /**
  * print_rev - return the length of a string
  * @s: variable
+ * _strlen - returns the length of a string
  * Return: always 0
+ *
  */
+int _strlen(char *s)
+{
+	int i;
+	
+	for (i = 0; s[i];)
+		i++;
+	return (i);
+}
 void print_rev(char *s)
 {
-	char *a = s;
-	while (*(a + 1) != '\0')
-		a++;
+	l = _strlen(*s);
 
-	while (a > s)
+	for (*s[1] = '\0';l >= 0;l--)
 	{
-		char tmp = *a;
-		*a-- = *s;
-		*s++ = tmp;
+		_putchar(*s[1]);
 	}
-	_putchar('\n');
+	
 }
