@@ -5,8 +5,7 @@
  * @str: variable
  * Return: always 0
  */
-
-int _puts(char *str)
+void _puts(char *str)
 {
 	while (*str != '\0')
 	{
