@@ -10,10 +10,10 @@ int _puts(char *str)
 {
 	while (*str != '\0')
 	{
-		_putchar(stdout, *str);
+		_putchar(*str);
 		str++;
 	}
-	_putchar(stdout, '\n');
+	_putchar('\n');
 
 	return (i);
 }
