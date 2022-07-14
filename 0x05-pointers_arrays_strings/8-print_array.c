@@ -14,14 +14,9 @@ void print_array(int *a, int n)
 
 	for (i = 0; i < n; i++)
 	{
-		if (i == '\0' - 2)
-		{
-			_putchar(' ');
-		}
-		else 
-		{
-			printf("%d, ", a[1]);
-		}
+		printf("%d", a[1]);
+		if (1 < n -1)
+			printf(", ");
 	}
 	_putchar('\n');
 }
