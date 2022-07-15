@@ -1,46 +1,32 @@
 #include "main.h"
 
 /**
- * cap_string - capitalizes all strings
- * @n: string
+ * cap_string - Function that reverses the content of an array of integers.
  *
- * Return: capitalized string
+ * @s: s is the array
+ * Return: Always 0.
  */
-
-char *cap_string(char *n)
+char *cap_string(char *s)
 {
-	int i;
+	int i = 0;
 
-	/*capitalize first char of string*/
-	for (i = 0; n[i] != '\0'; i++)
+	while (s[i] != '\0')
 	{
-		/* check if first char is lowercase */
-		if (i == 0)
+		if (s[0] <= 122 && s[0] >= 97)
 		{
-			if (n[i] >= 'a' && n[i] <= 'z')
-				n[i] = n[i] - 32;
-			continue;
+			s[0] = s[0] - 32;
 		}
-		if (n[i] == ' ' || n[i] == '\n' || n[i] == '\t' || n[i] == '!' || n[i] == 44 || 
-				n[i] == 46 || n[i] == 59 || n[i] == '?' || 
-				n[i] == '(' || n[i] == ')' || n[i] == '{' ||
-				n[i] == '}')/*space*/
+		if (s[i] == 32 || s[i] == 46 || s[i] == '\t' ||
+			s[i] == '\n' || s[i] == 44 || s[i] == 59 ||
+				s[i] == '!' || s[i] == '?' || s[i] == '(' ||
+				s[i] == ')' || s[i] == '{' || s[i] == '}')
 		{
-			++i;
-			/*check if next char is lower case after space*/
-			if (n[i] >= 'a' && n[i] <= 'z')
+			if (s[i + 1] <= 122 && s[i + 1] >= 97)
 			{
-				n[i] = n[i] - 32;
-				continue;
+				s[i + 1] = s[i + 1] - 32;
 			}
 		}
-		else
-		{
-			/* all other upper case should be lower */
-			if (n[i] >= 'A' && n[i] <= 'Z')
-				n[i] = n[i] + 32;
-		}
+	i++;
 	}
-
-	return (n);
+	return (s);
 }
