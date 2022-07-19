@@ -9,7 +9,7 @@
  * Return: the first occurence in s
  */
 
-unsigned int _strpbrk(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 	return (strpbrk(s, accept));
 }
