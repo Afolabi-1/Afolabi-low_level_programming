@@ -3,7 +3,7 @@
 #include "stdio.h"
 
 /**
- * _strchr:  function that locates a character in a string
+ * _strchr - function that locates a character in a string
  * @s: string s
  * @c: character c
  * Return: the first occurrence of c in s
