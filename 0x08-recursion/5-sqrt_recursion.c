@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * sqrt - loops through 1 - n to find the root
+ * sqrt1 - loops through 1 - n to find the root
  * @a: the perfet square
  * @b: starting number that loops
  * Return: -1 if no square root is found
  * 1 if successful
  */
-int sqrt(int a, int b)
+int sqrt1(int a, int b)
 {
 	/**
 	 * doubles b and checks if it
@@ -24,7 +24,7 @@ int sqrt(int a, int b)
 	/**
 	 * increments b
 	 */
-	return (sqrt(a, b + 1));
+	return (sqrt1(a, b + 1));
 }
 
 /**
@@ -36,5 +36,5 @@ int sqrt(int a, int b)
  */
 int _sqrt_recursion(int n)
 {
-	return (sqrt2(n, 1));
+	return (sqrt1(n, 1));
 }
