@@ -1,2 +1,1 @@
-# alx-low_level_programming
-I am starting c programming today.
+This is the beginnig of linked lists
