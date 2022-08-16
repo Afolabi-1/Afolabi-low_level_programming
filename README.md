@@ -1,1 +1,1 @@
-This is the beginnig of linked lists
+This is the tasks given to us about c programming language.
