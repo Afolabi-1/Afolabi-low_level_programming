@@ -1,40 +1,26 @@
+
 #!/usr/bin/python3
-"""
-Defining a func that returns the perimeter of the island
-descricbed in grid
-"""
+"""Module to define a function island_perimeter"""
+
 
 def island_perimeter(grid):
+    """Function to calculate an island described in a grid perimeter
+    grid is a list of list of integers:
+    0 represents a water zone
+    1 represents a land zone
+    One cell is a square with side length 1
     """
-    Args:
-        @grid: list if int 
-			0 - water zone
-			1 -  land zone
-			one cell is sq with side len 1
-			grid cells are conected horizontally/vertically
-			grid is rectangular, width and height dont exceed 100
-    return
-		perimeter of island
-    """
-
-    sq = 0
     width = len(grid[0])
-    length = len(grid)
+    height = len(grid)
+    edges = 0
+    size = 0
 
-    grid.insert(0, [0 for i in range(width)])
-    grid.append([0 for i in range(width)])
-    for row in range(length + 2):
-        grid[row].append(0)
-        grid[row].insert(0, 0)
-    for row in range(1, length + 1):
-        for col in range(1, width + 1):
-            if grid[row][col] == 1:
-                if grid[row][col - 1] == 0:
-                    sq += 1
-                if grid[row][col + 1] == 0:
-                    sq += 1
-                if grid[row - 1][col] == 0:
-                    sq += 1
-                if grid[row + 1][col] == 0:
-                    sq += 1
-    return sq
+    for i in range(height):
+        for j in range(width):
+            if grid[i][j] == 1:
+                size += 1
+                if (j > 0 and grid[i][j - 1] == 1):
+                    edges += 1
+                if (i > 0 and grid[i - 1][j] == 1):
+                    edges += 1
+    return size * 4 - edges * 2
